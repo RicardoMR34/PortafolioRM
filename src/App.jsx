@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import fotoPerfil from './foto.png'; 
+import fotoPerfil from './foto.jpeg'; 
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
