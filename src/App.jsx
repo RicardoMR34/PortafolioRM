@@ -61,14 +61,14 @@ const App = () => {
   return (
     <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
     <div className="floating-buttons">
-      <button className="theme-toggle-btn" onClick={toggleMode} title={darkMode ? 'Modo Claro' : 'Modo Oscuro'}>
-        {darkMode ? '☀️' : '🌙'}
-      </button>
-      <button className="download-cv-btn" onClick={downloadCV} title="Descargar CV">
-        {'Descargar CV'}
-        <FaDownload />
-      </button>
-    </div>
+  <button className="theme-toggle-btn" onClick={toggleMode}>
+    {darkMode ? '☀️' : '🌙'}
+  </button>
+  <button className="download-cv-btn" onClick={downloadCV}>
+    Descargar CV <FaDownload />
+  </button>
+</div>
+
       <div className="container">
         <header className="header">
           <h1 className="title">Mi Portafolio</h1>
