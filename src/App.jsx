@@ -4,12 +4,22 @@ import fotoPerfil from './foto.jpeg';
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaDownload } from 'react-icons/fa';
+import cv from './CV_RicardoMayorga.pdf'; 
 
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleMode = () => setDarkMode(!darkMode);
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = cv;
+    link.download = 'CV_RicardoMayorga.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const certificates = [
     {
       id: 1,
@@ -44,14 +54,19 @@ const App = () => {
 
   return (
     <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
-      <button className="theme-toggle-btn" onClick={toggleMode}>
-        {darkMode ? '☀️ Modo Claro' : '🌙 Modo Oscuro'}
+    <div className="floating-buttons">
+      <button className="theme-toggle-btn" onClick={toggleMode} title={darkMode ? 'Modo Claro' : 'Modo Oscuro'}>
+        {darkMode ? '☀️' : '🌙'}
       </button>
-
+      <button className="download-cv-btn" onClick={downloadCV} title="Descargar CV">
+        {'Descargar CV'}
+        <FaDownload />
+      </button>
+    </div>
       <div className="container">
         <header className="header">
           <h1 className="title">Mi Portafolio</h1>
-          <p className="subtitle">Desarrollador de Tecnologías de la Información</p>
+          <p className="subtitle">Ingeniero en Tecnologías de la Información y Comunicaciones</p>
         </header>
 
         <section className="section">
@@ -140,7 +155,7 @@ const App = () => {
               <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=ricardomayorgaroman@gmail.com&su=Contacto desde Portafolio"  target="_blank" className="contact-link">
               ✉️ Email</a>
               <a href="https://www.linkedin.com/in/ricardo-mayorga-román-391947222" target="_blank" rel="noopener noreferrer" className="contact-link">🔗 LinkedIn</a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-link">💻 GitHub</a>
+              <a href="https://github.com/RicardoMR34" target="_blank" rel="noopener noreferrer" className="contact-link">💻 GitHub</a>
             </div>
           </div>
         </section>
