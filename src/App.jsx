@@ -6,9 +6,15 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaDownload } from 'react-icons/fa';
 import cv from './CV_RicardoMayorga.pdf'; 
+import { useEffect } from 'react';
+
 
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = "Ricardo Mayorga | Portafolio Profesional";
+  }, []);
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleMode = () => setDarkMode(!darkMode);
