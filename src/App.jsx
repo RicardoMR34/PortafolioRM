@@ -181,7 +181,6 @@ const App = () => {
     </div>
   </div>
 
-  {/* Experiencia 2 */}
   <div className="experience-card">
     <div className="experience-icon">
       <FaCode className="icon" />
