@@ -1,52 +1,53 @@
 .tag-list {
-  width: 68rem;
+  width: 100%;
+  max-width: 68rem;
   font-family: 'Monserrat', sans-serif;
   font-weight: 500;
-  position: relative;   
-  overflow: hidden  ;
-
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .inner {
-    width: fit-content;
-    display: flex;
-    gap: 1rem;
-    animation: loop 15s linear infinite;
+  width: fit-content;
+  display: flex;
+  gap: 0.8rem;
+  animation: loop 15s linear infinite;
 }
 
 .inner:before {
-    content: "";
-    display: flex;
-    gap: 1rem;
+  content: "";
+  display: flex;
+  gap: 0.8rem;
 }
 
-.tech-tag{
+.tech-tag {
   display: flex;
   align-items: center;
   gap: 0 0.5rem;
   color: #f9f8f8;
-font-size: 0.9rem;
-background-color: #223950;
-    padding: 0.5rem 0.73rem;
-    border-radius: 0.4rem;
-    box-shadow: 
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  background-color: #223950;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 
     0 0.1rem 0.2rem #0000001a,
     0 0.1rem 0.5rem #0000004d,
-    0 0.1rem 1.5rem #00000066,
+    0 0.1rem 1.5rem #00000066;
+  white-space: nowrap;
 }
 
 .tech-tag span {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #fdfdfd;
 }
 
 .fade {
-    position: absolute;
-    background: linear-gradient(90deg, #fffefe1a, transparent);
-    inset: 0;
-    pointer-events: none;
+  position: absolute;
+  background: linear-gradient(90deg, #fffefe1a, transparent 30%, transparent 70%, #fffefe1a);
+  inset: 0;
+  pointer-events: none;
 }
-
 
 @keyframes loop {
   0% {
@@ -54,6 +55,36 @@ background-color: #223950;
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .inner {
+    gap: 0.6rem;
+    animation-duration: 20s; /* Slower animation on mobile */
+  }
+  
+  .tech-tag {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px;
+  }
+  
+  .inner {
+    gap: 0.4rem;
+  }
+  
+  .fade {
+    background: linear-gradient(90deg, #fffefe1a, transparent 20%, transparent 80%, #fffefe1a);
   }
 }
 
