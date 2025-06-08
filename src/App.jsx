@@ -5,7 +5,7 @@ import './tags.css';
 import './section.css';
 import './experiencia.css';
 import './back.css';
-import fotoPerfil from './imagen3.png'; 
+import imagen3 from './imagen3.png'; 
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
@@ -102,7 +102,7 @@ const App = () => {
             Experiencia trabajando en equipo y de manera autodidacta.</p>
           </div>
            <div className="about-image2">
-            <img src={fotoPerfil} alt="Foto de perfil" className="profile-photo2" />
+            <img src={imagen3} alt="Foto de perfil" className="profile-photo2" />
           </div>
         </div>
         </section>
