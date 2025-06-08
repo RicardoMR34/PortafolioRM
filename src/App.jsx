@@ -5,7 +5,7 @@ import './tags.css';
 import './section.css';
 import './experiencia.css';
 import './back.css';
-import imagen3 from './imagen3.png'; 
+import imagen3 from './imagen3.png';
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
