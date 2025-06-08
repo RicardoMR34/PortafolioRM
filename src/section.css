@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+.section2 {
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.light-mode .section2 {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.dark-mode .section2 {
+  background: linear-gradient(135deg, #1D3557 0%, #0e1a2b 100%);
+}
+
+.section-header2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-header2 h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.5s ease;
+}
+
+.divider2 {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  margin: 0 auto;
+  border-radius: 2px;
+  position: relative;
+  transition: background 0.5s ease;
+}
+
+.divider2::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-color);
+  transition: all 0.5s ease;
+}
+
+.content2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+.about-text2 {
+  flex: 1;
+}
+
+.about-text2 p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.about-image2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-photo2 {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid var(--card-bg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.profile-photo2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.section2::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top: -150px;
+  right: -150px;
+  transition: all 0.5s ease;
+}
+
+.light-mode .section2::before {
+  background: rgba(108, 154, 200, 0.1);
+}
+
+.dark-mode .section2::before {
+  background: rgba(72, 149, 239, 0.1);
+}
+
+
+.light-mode .section2::after {
+  background: rgba(58, 123, 213, 0.1);
+}
+
+.dark-mode .section2::after {
+  background: rgba(67, 97, 238, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content2 {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  
+  .profile-photo2 {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .about-text2 p {
+    padding-left: 0;
+    border-left: none;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+  }
+}

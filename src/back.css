@@ -1,0 +1,29 @@
+
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --primary-color: #6c9ac8;
+  --secondary-color: #3a0ca3;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+}
+
+.light-mode {
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --primary-color: #6c9ac8;
+  --secondary-color: #3a0ca3;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  color: var(--text-color);
+}
+
+.dark-mode {
+  --background-color: #1D3557;
+  --text-color: #f8f9fa;
+  --primary-color: #4895ef;
+  --secondary-color: #4361ee;
+  --card-bg: #0e1a2b;
+  --border-color: #343a40;
+  color: var(--text-color);
+}

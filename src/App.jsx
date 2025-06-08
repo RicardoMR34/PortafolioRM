@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import './App.css';
+import './titulo.css'; 
+import './tags.css'; 
+import './section.css';
+import './experiencia.css';
+import './back.css';
 import fotoPerfil from './foto.jpeg'; 
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaDownload } from 'react-icons/fa';
 import cv from './CV_RicardoMayorga.pdf'; 
+import { FaCalendarAlt } from "react-icons/fa";
 import { useEffect } from 'react';
 
 
@@ -71,29 +77,39 @@ const App = () => {
 
       <div className="container">
         <header className="header">
-          <h1 className="title">Mi Portafolio</h1>
-          <p className="subtitle">Ingeniero en Tecnologías de la Información y Comunicaciones</p>
+          <h1  className="titlemove">
+              PORTAFOLIO DE 
+              <span>
+                <span>RICARDO</span>
+                <span>EMMANUEL</span>
+                <span>MAYORGA</span>
+                <span>ROMÁN</span>
+              </span>
+            </h1>
+        
         </header>
 
-        <section className="section">
-          <div className="section-header">
+        <section className="section2">
+          <div className="section-header2">
             <h2>Sobre Mí</h2>
-            <div className="divider"></div>
+            <div className="divider2"></div>
           </div>
-          <div className="content">
-                      <div className="about-text">
-            <p>Ingeniero en TIC recién egresado con capacidad para manejar múltiples tareas diariamente. 
+          <div className="content2">
+                      <div className="about-text2">
+            <p>Ingeniero en ITIC recién egresado con capacidad para manejar múltiples tareas diariamente. 
             Persona energética y con gran motivación para aprender nuevas habilidades. 
             Siempre preparado para adaptarme a diferentes tecnologías según lo requiera un proyecto. 
             Experiencia trabajando en equipo y de manera autodidacta.</p>
           </div>
-           <div className="about-image">
-            <img src={fotoPerfil} alt="Foto de perfil" className="profile-photo" />
+           <div className="about-image2">
+            <img src={fotoPerfil} alt="Foto de perfil" className="profile-photo2" />
           </div>
         </div>
         </section>
 
-        <section className="section">
+        
+
+        <section className="section2">
           <div className="section-header">
             <h2>Educacion</h2>
             <div className="divider"></div>
@@ -102,55 +118,94 @@ const App = () => {
             <div className="project-card">
               <h3>Instituto Tecnologico de Aguascalientes</h3>
               <p> Ingeniería en Tecnologías de la Información y Comunicaciones</p>
-              <span className="tech-tag">React</span>
-              <span className="tech-tag">Node.js</span>
-              <span className="tech-tag">JavaScript</span>
-              <span className="tech-tag">Python</span>
-              <span className="tech-tag">HTML</span>
-              <span className="tech-tag">CSS</span> 
-              <span className="tech-tag">Git</span>
-              <span className="tech-tag">MySQL</span> 
-              <span className="tech-tag">C#</span>
-              <span className="tech-tag">Java</span>
-              <span className="tech-tag">PHP</span>
-              <span className="tech-tag">Laravel</span>
+              <div className='tag-list'>
+                <div className='inner'>
+              <div className="tech-tag"><span></span>React</div>
+              <div className="tech-tag"><span></span>Node.js</div>
+              <div className="tech-tag"><span></span>JavaScript</div>
+              <div className="tech-tag"><span></span>Python</div>
+              <div className="tech-tag"><span></span>HTML</div>
+              <div className="tech-tag"><span></span>CSS</div>
+              <div className="tech-tag"><span></span>Git</div>
+              <div className="tech-tag"><span></span>MySQL</div>
+              <div className="tech-tag"><span></span>C#</div>
+              <div className="tech-tag"><span></span>Java</div>
+              <div className="tech-tag"><span></span>PHP</div>
+              <div className="tech-tag"><span></span>Laravel</div>    
+              <div className="tech-tag"><span></span>React</div>
+              <div className="tech-tag"><span></span>Node.js</div>
+              <div className="tech-tag"><span></span>JavaScript</div>
+              <div className="tech-tag"><span></span>Python</div>
+              <div className="tech-tag"><span></span>HTML</div>
+              <div className="tech-tag"><span></span>CSS</div>
+              <div className="tech-tag"><span></span>Git</div>
+              <div className="tech-tag"><span></span>MySQL</div>
+              <div className="tech-tag"><span></span>C#</div>
+              <div className="tech-tag"><span></span>Java</div>
+              <div className="tech-tag"><span></span>PHP</div>
+              <div className="tech-tag"><span></span>Laravel</div>           
             </div>
+            <div className="fade"></div>
           </div>
+            </div>
+            </div>
         </section>
- <section className="section">
-        <div className="section-header">
-          <h2>Experiencia Profesional</h2>
-          <div className="divider"></div>
-        </div>
-        
-        <div className="experience-container">
-          {/* Experiencia 1 */}
-          <div className="experience-card">
-            <div className="experience-icon">
-              <FaChartLine />
-            </div>
-            <div className="experience-content">
-              <h3>QS2Point <span className="location">– Massachusetts</span></h3>
-              <h4>Analista Jr. de Requerimientos</h4>
-              <div className="experience-date">Septiembre 2024 – Marzo 2025</div>
-            </div>
-          </div>
 
-          {/* Experiencia 2 */}
-          <div className="experience-card">
-            <div className="experience-icon">
-              <FaCode />
-            </div>
-            <div className="experience-content">
-              <h3>GovaClean <span className="location">– Querétaro</span></h3>
-              <h4>Desarrollador Full Stack</h4>
-              <div className="experience-date">Enero 2023 – Mayo 2024</div>
-            </div>
-          </div>
-        </div>
+
+ <section className="section2">
+      <div className="section-header">
+  <h2>Experiencia Profesional</h2>
+  <div className="divider"></div>
+</div>
+
+<div className="experience-container">
+  {/* Experiencia 1 */}
+  <div className="experience-card">
+    <div className="experience-icon">
+      <FaChartLine className="icon" />
+    </div>
+    <div className="experience-content">
+      <div className="experience-header">
+        <h3>QS2Point</h3>
+        <span className="experience-badge">Massachusetts</span>
+      </div>
+      <h4>Analista Jr. de Requerimientos</h4>
+      <div className="experience-date">
+        <FaCalendarAlt className="date-icon" />
+        <span>Septiembre 2024 – Marzo 2025</span>
+      </div>
+      <div className="experience-timeline">
+        <div className="timeline-dot"></div>
+        <div className="timeline-line"></div>
+      </div>
+    </div>
+  </div>
+
+  {/* Experiencia 2 */}
+  <div className="experience-card">
+    <div className="experience-icon">
+      <FaCode className="icon" />
+    </div>
+    <div className="experience-content">
+      <div className="experience-header">
+        <h3>GovaClean</h3>
+        <span className="experience-badge">Querétaro</span>
+      </div>
+      <h4>Desarrollador Full Stack</h4>
+      <div className="experience-date">
+        <FaCalendarAlt className="date-icon" />
+        <span>Enero 2023 – Mayo 2024</span>
+      </div>
+      <div className="experience-timeline">
+        <div className="timeline-dot"></div>
+        <div className="timeline-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
       </section>
 
-         <section className="section">
+         <section className="section2">
           <div className="section-header">
             <h2>Contacto</h2>
             <div className="divider"></div>
@@ -166,7 +221,7 @@ const App = () => {
           </div>
         </section>
 
-         <section className="section">
+         <section className="section2">
         <div className="section-header">
           <h2>Mis Certificados y cursos</h2>
           <div className="divider"></div>
@@ -199,7 +254,7 @@ const App = () => {
         </div>
       </section>
 
-        <footer className="contact-footer">
+        <footer>
         <div className="footer-content">
           <div className="contact-info">
             <span><FaPhone /> +52 449 291 8713</span>
