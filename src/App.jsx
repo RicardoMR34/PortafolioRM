@@ -5,6 +5,7 @@ import './tags.css';
 import './section.css';
 import './experiencia.css';
 import './back.css';
+import './proyectos.css';
 import foto3 from './foto3.png';
 import { FaBriefcase, FaCode, FaChartLine } from 'react-icons/fa'; 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
@@ -111,7 +112,7 @@ const App = () => {
 
         <section className="section2">
           <div className="section-header">
-            <h2>Educacion</h2>
+            <h2>FORMACION ACADEMICA</h2>
             <div className="divider"></div>
           </div>
           <div className="projects-grid">
@@ -220,9 +221,142 @@ const App = () => {
           </div>
         </section>
 
+<section className="section2">
+  <div className="section-header">
+    <h2>ALGUNOS PROYECTOS</h2>
+    <div className="divider"></div>
+  </div>
+
+  <div className="projects-grid">
+    
+    <div className="project-card">
+      <h3>GENERADOR QR</h3>
+      <p>Generador de códigos QR que convierte texto ingresado por el usuario en un código QR visual. 
+        Usa una librería especializada para crear la imagen QR y permite visualizarla directamente en la interfaz.</p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto1-1.png' alt="Proyecto 1 - Imagen 1" />
+
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">React</div>
+        <div className="tech-item">Node.js</div>
+        <div className="tech-item">CSS</div>
+        <div className="tech-item">HTML</div>
+        <div className="tech-item">JavaScript</div>
+      </div>
+    </div>
+
+
+    <div className="project-card">
+      <h3>ECOMMERCE</h3>
+      <p>Landing page para un sitio de comercio electrónico. Con funciones de carrito de compras y pago con PayPal funcional.
+        Con datos extraidos de JSON
+      </p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto2-1.png' alt="Proyecto 2 - Imagen 1" />
+        <img src='imagenes/proyecto2-2.png' alt="Proyecto 2 - Imagen 2" />
+        <img src='imagenes/proyecto2-3.png' alt="Proyecto 2 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">JSON</div>
+        <div className="tech-item">HTML</div>
+        <div className="tech-item">CSS</div>
+        <div className="tech-item">JavaScript</div>
+        <div className="tech-item">PayPal</div>
+      </div>
+    </div>
+
+    <div className="project-card">
+      <h3>CALCULADORA DE NOMINA</h3>
+      <p>Aplicación web para calcular nómina de empleados, permitiendo ingresar horas trabajadas y salario por hora. Ademas 
+        permitiendo registrar, editar y eliminar empleados en una base de datos, con pruebas en PHPUnit
+      </p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto3-1.png' alt="Proyecto 3 - Imagen 1" />
+        <img src='imagenes/proyecto3-2.png' alt="Proyecto 3 - Imagen 2" />
+        <img src='imagenes/proyecto3-3.png' alt="Proyecto 3 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">PHP</div>
+        <div className="tech-item">PHPUnit</div>
+        <div className="tech-item">SQL</div>
+        <div className="tech-item">JavaScript</div>
+        <div className="tech-item">HTML</div>
+        <div className="tech-item">SELENIUM</div>
+
+      </div>
+    </div>
+
+      <div className="project-card">
+      <h3>INVENTARIO DE MEDICAMENTOS</h3>
+      <p>Aplicación web para gestionar el inventario de medicamentos en una farmacia, permitiendo agregar, editar y eliminar productos,
+         así como llevar un control de stock.</p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto4-1.png' alt="Proyecto 4 - Imagen 1" />
+        <img src='imagenes/proyecto4-2.png' alt="Proyecto 4 - Imagen 2" />
+        <img src='imagenes/proyecto4-3.png' alt="Proyecto 4 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">MVC</div>
+        <div className="tech-item">C#</div>
+        <div className="tech-item">SQL</div>
+        <div className="tech-item">Entity Framework</div>
+        <div className="tech-item">.CSHTML</div>
+      </div>
+    </div>
+
+      <div className="project-card">
+      <h3>REGISTRO DE EMPLEADOS</h3>
+      <p>Aplicación web para gestionar el registro de empleados en una empresa, permitiendo agregar, editar y eliminar empleados,
+        utilizando base de datos y Blazor
+      </p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto5-1.png' alt="Proyecto 5 - Imagen 1" />
+        <img src='imagenes/proyecto5-2.png' alt="Proyecto 5 - Imagen 2" />
+        <img src='imagenes/proyecto5-3.png' alt="Proyecto 5 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">Python</div>
+        <div className="tech-item">Django</div>
+        <div className="tech-item">PostgreSQL</div>
+      </div>
+    </div>
+
+      <div className="project-card">
+      <h3>MODELO PARA PREDICCION DE INPC</h3>
+      <p>Modelo para predecir el Índice Nacional de Precios al Consumidor (INPC) 
+        utilizando técnicas de Machine Learning. Con un 99.99915% de precisión relativa </p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto6-1.png' alt="Proyecto 6 - Imagen 1" />
+        <img src='imagenes/proyecto6-2.png' alt="Proyecto 6 - Imagen 2" />
+        <img src='imagenes/proyecto6-3.png' alt="Proyecto 6 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">Python</div>
+        <div className="tech-item">Machine Learning</div>
+        <div className="tech-item">MONGODB</div>
+        <div className="tech-item">JUPYTER</div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
          <section className="section2">
         <div className="section-header">
-          <h2>Mis Certificados y cursos</h2>
+          <h2>Certificados y cursos</h2>
           <div className="divider"></div>
           <p className="section-subtitle">Reconocimientos académicos y profesionales</p>
         </div>
