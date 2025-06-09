@@ -326,9 +326,11 @@ const App = () => {
       </div>
 
       <div className="project-technologies">
-        <div className="tech-item">Python</div>
-        <div className="tech-item">Django</div>
-        <div className="tech-item">PostgreSQL</div>
+        <div className="tech-item">C#</div>
+        <div className="tech-item">Blazor</div>
+        <div className="tech-item">SQL</div>
+        <div className="tech-item">XAMPP</div>
+        <div className="tech-item">.CSHTML</div>
       </div>
     </div>
 
