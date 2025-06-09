@@ -77,12 +77,6 @@ const App = () => {
   <button className="download-cv-btn" onClick={downloadCV}>
     Descargar CV <FaDownload />
   </button>
-
-  <Link to="/en">
-    <button className="idioma2">
-      Español
-    </button>
-  </Link>
 </div>
 
       <div className="container">

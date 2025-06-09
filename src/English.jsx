@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom';
 const App = () => {
 
   useEffect(() => {
-    document.title = "Ricardo Mayorga | Portafolio Profesional";
+    document.title = "Ricardo Mayorga |Professional Portfolio";
   }, []);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -38,14 +38,14 @@ const App = () => {
   const certificates = [
     {
       id: 1,
-      title: "Google Cloud Computing Foundations CertificateS",
+      title: "Google Cloud Computing Foundations Certificates",
       institution: "Google and INROADS",
       year: "2024",
       link: "https://www.cloudskillsboost.google/public_profiles/20017619-7e83-468c-8659-b81cbe0f9ffb"
     },
     {
       id: 2,
-      title: " Inteligencia Artificial y Data Science ",
+      title: " Artificial Intelligence and Data Science",
       institution: "BlockDemy",
       year: "2024",
       link: "#"
@@ -73,14 +73,15 @@ const App = () => {
   <button className="theme-toggle-btn" onClick={toggleMode}>
     {darkMode ? '☀️' : '🌙'}
   </button>
+  
  
   <button className="download-cv-btn" onClick={downloadCV}>
-    Descargar CV <FaDownload />
+    Download CV <FaDownload />
   </button>
 
-  <Link to="/en">
+  <Link to="/">
     <button className="idioma2">
-      Español
+      English
     </button>
   </Link>
 </div>
@@ -88,7 +89,7 @@ const App = () => {
       <div className="container">
         <header className="header">
           <h1  className="titlemove">
-              PORTAFOLIO DE 
+              PORTFOLIO 
               <span>
                 <span>RICARDO</span>
                 <span>EMMANUEL</span>
@@ -101,15 +102,15 @@ const App = () => {
 
         <section className="section2">
           <div className="section-header2">
-            <h2>Sobre Mí</h2>
+            <h2>About me</h2>
             <div className="divider2"></div>
           </div>
           <div className="content2">
                       <div className="about-text2">
-            <p>Ingeniero en ITIC recién egresado con capacidad para manejar múltiples tareas diariamente. 
-            Persona energética y con gran motivación para aprender nuevas habilidades. 
-            Siempre preparado para adaptarme a diferentes tecnologías según lo requiera un proyecto. 
-            Experiencia trabajando en equipo y de manera autodidacta.</p>
+            <p>Recently graduated ICT engineer with the ability to handle multiple tasks on a daily basis.
+                Energetic and highly motivated to learn new skills.
+                Always prepared to adapt to different technologies as a project requires.
+                Experience working in a team and as a self-taught individual.</p>
           </div>
            <div className="about-image2">
             <img src={foto3} alt="Foto de perfil" className="profile-photo2" />
@@ -121,13 +122,13 @@ const App = () => {
 
         <section className="section2">
           <div className="section-header">
-            <h2>FORMACION ACADEMICA</h2>
+            <h2>ACADEMIC TRAINING</h2>
             <div className="divider"></div>
           </div>
           <div className="projects-grid">
             <div className="project-card">
               <h3>Instituto Tecnologico de Aguascalientes</h3>
-              <p> Ingeniería en Tecnologías de la Información y Comunicaciones</p>
+              <p> Engineering in Information and Communication Technologies</p>
               <div className='tag-list'>
                 <div className='inner'>
               <div className="tech-tag"><span></span>React</div>
@@ -164,12 +165,11 @@ const App = () => {
 
  <section className="section2">
       <div className="section-header">
-  <h2>Experiencia Profesional</h2>
+  <h2>Professional Experience</h2>
   <div className="divider"></div>
 </div>
 
 <div className="experience-container">
-  {/* Experiencia 1 */}
   <div className="experience-card">
     <div className="experience-icon">
       <FaChartLine className="icon" />
@@ -179,10 +179,10 @@ const App = () => {
         <h3>QS2Point</h3>
         <span className="experience-badge">Massachusetts</span>
       </div>
-      <h4>Analista Jr. de Requerimientos</h4>
+      <h4>Junior Requirements Analyst</h4>
       <div className="experience-date">
         <FaCalendarAlt className="date-icon" />
-        <span>Septiembre 2024 – Marzo 2025</span>
+        <span>September 2024 – March 2025</span>
       </div>
       <div className="experience-timeline">
         <div className="timeline-dot"></div>
@@ -200,10 +200,10 @@ const App = () => {
         <h3>GovaClean</h3>
         <span className="experience-badge">Querétaro</span>
       </div>
-      <h4>Desarrollador Full Stack</h4>
+      <h4>Full Stack Developer</h4>
       <div className="experience-date">
         <FaCalendarAlt className="date-icon" />
-        <span>Enero 2023 – Mayo 2024</span>
+        <span>January 2023 – May 2024</span>
       </div>
       <div className="experience-timeline">
         <div className="timeline-dot"></div>
@@ -216,11 +216,11 @@ const App = () => {
 
          <section className="section2">
           <div className="section-header">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
             <div className="divider"></div>
           </div>
           <div className="contact-content">
-            <p>Puedes contactarme a través de:</p>
+            <p>You can contact me through:</p>
             <div className="contact-links">
               <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=ricardomayorgaroman@gmail.com&su=Contacto desde Portafolio"  target="_blank" className="contact-link">
               ✉️ Email</a>
@@ -232,16 +232,16 @@ const App = () => {
 
 <section className="section2">
   <div className="section-header">
-    <h2>ALGUNOS PROYECTOS</h2>
+    <h2>SOME PROJECTS</h2>
     <div className="divider"></div>
   </div>
 
   <div className="projects-grid">
     
     <div className="project-card">
-      <h3>GENERADOR QR</h3>
-      <p>Generador de códigos QR que convierte texto ingresado por el usuario en un código QR visual. 
-        Usa una librería especializada para crear la imagen QR y permite visualizarla directamente en la interfaz.</p>
+      <h3>QR GENERATOR</h3>
+      <p>A QR code generator that converts text entered by the user into a visual QR code.
+        It uses a specialized library to create the QR image and allows it to be viewed directly in the interface.</p>
 
       <div className="project-carousel">
         <img src='imagenes/proyecto1-1.png' alt="Proyecto 1 - Imagen 1" />
@@ -260,8 +260,8 @@ const App = () => {
 
     <div className="project-card">
       <h3>ECOMMERCE</h3>
-      <p>Landing page para un sitio de comercio electrónico. Con funciones de carrito de compras y pago con PayPal funcional.
-        Con datos extraidos de JSON
+      <p>Landing page for an e-commerce site. With shopping cart functions and functional PayPal payment.
+        With data extracted from JSON
       </p>
 
       <div className="project-carousel">
@@ -280,9 +280,9 @@ const App = () => {
     </div>
 
     <div className="project-card">
-      <h3>CALCULADORA DE NOMINA</h3>
-      <p>Aplicación web para calcular nómina de empleados, permitiendo ingresar horas trabajadas y salario por hora. Ademas 
-        permitiendo registrar, editar y eliminar empleados en una base de datos, con pruebas en PHPUnit
+      <h3>PAYROLL CALCULATOR</h3>
+      <p>Web application to calculate employee payroll, allowing the entry of hours worked and salary per hour. In addition,
+        it allows registering, editing, and deleting employees in a database, with tests in PHPUnit.
       </p>
 
       <div className="project-carousel">
@@ -303,9 +303,9 @@ const App = () => {
     </div>
 
       <div className="project-card">
-      <h3>INVENTARIO DE MEDICAMENTOS</h3>
-      <p>Aplicación web para gestionar el inventario de medicamentos en una farmacia, permitiendo agregar, editar y eliminar productos,
-         así como llevar un control de stock.</p>
+      <h3>INVENTORY OF MEDICINES</h3>
+      <p>Web application to manage the inventory of medicines in a pharmacy, allowing the addition, editing, and deletion of products,
+         as well as keeping track of stock.</p>
 
       <div className="project-carousel">
         <img src='imagenes/proyecto4-1.png' alt="Proyecto 4 - Imagen 1" />
@@ -323,9 +323,9 @@ const App = () => {
     </div>
 
       <div className="project-card">
-      <h3>REGISTRO DE EMPLEADOS</h3>
-      <p>Aplicación web para gestionar el registro de empleados en una empresa, permitiendo agregar, editar y eliminar empleados,
-        utilizando base de datos y Blazor
+      <h3>EMPLOYEE REGISTRATION</h3>
+      <p>Web application to manage employee registration in a company, allowing the addition, editing, and deletion of employees,
+        using a database and Blazor
       </p>
 
       <div className="project-carousel">
@@ -344,9 +344,9 @@ const App = () => {
     </div>
 
       <div className="project-card">
-      <h3>MODELO PARA PREDICCION DE INPC</h3>
-      <p>Modelo para predecir el Índice Nacional de Precios al Consumidor (INPC) 
-        utilizando técnicas de Machine Learning. Con un 99.99915% de precisión relativa </p>
+      <h3>MODEL FOR PREDICTION OF INPC</h3>
+      <p>Model to predict the National Consumer Price Index (INPC)
+        using Machine Learning techniques. With a 99.99915% relative accuracy</p>
 
       <div className="project-carousel">
         <img src='imagenes/proyecto6-1.png' alt="Proyecto 6 - Imagen 1" />
@@ -367,9 +367,9 @@ const App = () => {
 
          <section className="section2">
         <div className="section-header">
-          <h2>Certificados y cursos</h2>
+          <h2>Certificates and Courses</h2>
           <div className="divider"></div>
-          <p className="section-subtitle">Reconocimientos académicos y profesionales</p>
+          <p className="section-subtitle">Academic and professional recognitions</p>
         </div>
         
         <div className="certificates-list">
