@@ -362,9 +362,7 @@ const App = () => {
       </div>
     </div>
   </div>
-
   </section>
-
          <section className="section2">
         <div className="section-header">
           <h2>Certificados y cursos</h2>
