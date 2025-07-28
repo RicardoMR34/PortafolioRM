@@ -343,6 +343,44 @@ const App = () => {
       </div>
     </div>
 
+    
+      <div className="project-card">
+      <h3>LISTA DE TAREAS</h3>
+      <p>Aplicación web y movil para agregar, eliminar y marcar como completadas las tareas. Con python como backend</p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto7-1.png' alt="Proyecto 7 - Imagen 1" />
+     
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">Python</div>
+        <div className="tech-item">TypeScript</div>
+        <div className="tech-item">CSS</div>
+       
+      </div>
+    </div>
+
+      <div className="project-card">
+      <h3>REGISTRO DE EMPLEADOS</h3>
+      <p>Aplicación web para gestionar el registro de empleados en una empresa, permitiendo agregar, editar y eliminar empleados,
+        utilizando base de datos y Blazor
+      </p>
+
+      <div className="project-carousel">
+        <img src='imagenes/proyecto5-1.png' alt="Proyecto 5 - Imagen 1" />
+        <img src='imagenes/proyecto5-2.png' alt="Proyecto 5 - Imagen 2" />
+        <img src='imagenes/proyecto5-3.png' alt="Proyecto 5 - Imagen 3" />
+      </div>
+
+      <div className="project-technologies">
+        <div className="tech-item">C#</div>
+        <div className="tech-item">Blazor</div>
+        <div className="tech-item">SQL</div>
+        <div className="tech-item">XAMPP</div>
+        <div className="tech-item">.CSHTML</div>
+      </div>
+    </div>
       <div className="project-card">
       <h3>MODELO PARA PREDICCION DE INPC</h3>
       <p>Modelo para predecir el Índice Nacional de Precios al Consumidor (INPC) 
